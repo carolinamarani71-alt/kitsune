@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Kitsune Kissaten 🦊</title>
+
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+<header class="header">
+
+    <a href="#inicio" class="logo">
+        🦊 Kitsune Kissaten
+    </a>
+
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#menu">Menú</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#reserva">Reservas</a>
+    </nav>
+
+    <button id="abrirCarrito" class="carrito-btn">
+        🛒 <span id="cantidadCarrito">0</span>
+    </button>
+
+</header>
+
+
+<!-- INICIO -->
+
+<section id="inicio" class="hero">
+
+    <div class="hero-contenido">
+
+        <p class="japones">きつね • KITSUNE</p>
+
+        <h1>
+            Kitsune
+            <span>Kissaten</span>
+        </h1>
+
+        <p class="descripcion">
+            Un pequeño rincón japonés donde el
+            sabor, el café y la tranquilidad se
+            encuentran.
+        </p>
+
+        <div class="botones">
+
+            <a href="#menu" class="btn">
+                Ver menú
+            </a>
+
+            <a href="#reserva" class="btn btn-claro">
+                Reservar mesa
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- NOSOTROS -->
+
+<section id="nosotros" class="nosotros">
+
+    <div class="nosotros-img">
+
+        <img
+            src="https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=1000&q=80"
+            alt="Restaurante">
+
+    </div>
+
+    <div class="nosotros-texto">
+
+        <p class="mini-titulo">
+            KITSUNE KISSATEN
+        </p>
+
+        <h2>
+            Un rincón de Japón
+        </h2>
+
+        <p>
+            En Kitsune Kissaten queremos que cada
+            visita sea especial. Combinamos sabores
+            japoneses con un ambiente cálido,
+            moderno y tranquilo.
+        </p>
+
+        <p>
+            Ven a disfrutar un ramen, un café,
+            nuestros postres o simplemente pasa
+            un momento agradable.
+        </p>
+
+        <div class="datos">
+
+            <div>
+                <strong>10+</strong>
+                <span>Opciones</span>
+            </div>
+
+            <div>
+                <strong>100%</strong>
+                <span>Sabor</span>
+            </div>
+
+            <div>
+                <strong>🦊</strong>
+                <span>Kitsune</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- MENU -->
+
+<section id="menu" class="menu">
+
+    <div class="titulo">
+
+        <p class="mini-titulo">
+            OUR MENU
+        </p>
+
+        <h2>
+            Sabores de Kitsune
+        </h2>
+
+        <p>
+            Elige tu favorito y agrégalo al carrito.
+        </p>
+
+    </div>
+
+
+    <div class="categorias">
+
+        <button class="categoria activa" data-categoria="Todos">
+            Todos
+        </button>
+
+        <button class="categoria" data-categoria="Entradas">
+            🥟 Entradas
+        </button>
+
+        <button class="categoria" data-categoria="Postres">
+            🍰 Postres
+        </button>
+
+        <button class="categoria" data-categoria="Bebidas">
+            🍵 Bebidas
+        </button>
+
+    </div>
+
+
+    <div id="productos" class="productos"></div>
+
+</section>
+
+
+<!-- RESERVAS -->
+
+<section id="reserva" class="reserva">
+
+    <div class="titulo">
+
+        <p class="mini-titulo">
+            RESERVATION
+        </p>
+
+        <h2>
+            Reserva tu mesa
+        </h2>
+
+        <p>
+            Haz tu reserva para disfrutar Kitsune Kissaten.
+        </p>
+
+    </div>
+
+
+    <form id="formReserva" class="formulario">
+
+        <input
+            type="text"
+            id="nombre"
+            placeholder="Tu nombre"
+            required>
+
+        <input
+            type="tel"
+            id="telefono"
+            placeholder="Número de teléfono"
+            required>
+
+        <input
+            type="date"
+            id="fecha"
+            required>
+
+        <input
+            type="time"
+            id="hora"
+            required>
+
+        <select id="personas">
+
+            <option value="1">1 persona</option>
+            <option value="2" selected>2 personas</option>
+            <option value="3">3 personas</option>
+            <option value="4">4 personas</option>
+            <option value="5">5 personas</option>
+            <option value="6">6 personas</option>
+            <option value="7">7 personas</option>
+            <option value="8">8 personas</option>
+
+        </select>
+
+        <button class="btn" type="submit">
+            Confirmar reserva
+        </button>
+
+        <p id="mensajeReserva"></p>
+
+    </form>
+
+</section>
+
+
+<!-- INFORMACIÓN -->
+
+<section class="informacion">
+
+    <div>
+        <span>📍</span>
+        <h3>Ubicación</h3>
+        <p>La Paz, Bolivia</p>
+    </div>
+
+    <div>
+        <span>🕐</span>
+        <h3>Horario</h3>
+        <p>Lun - Dom: 09:00 - 22:00</p>
+    </div>
+
+    <div>
+        <span>📞</span>
+        <h3>Contacto</h3>
+        <p>700 000 000</p>
+    </div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+    <div class="footer-contenido">
+
+        <div>
+
+            <h2>
+                🦊 Kitsune Kissaten
+            </h2>
+
+            <p>
+                Comida japonesa • Café • Postres
+            </p>
+
+        </div>
+
+
+        <div class="redes">
+
+            <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                title="Instagram">
+
+                ◎
+
+            </a>
+
+            <a
+                href="https://www.tiktok.com/"
+                target="_blank"
+                title="TikTok">
+
+                ♪
+
+            </a>
+
+            <a
+                href="https://www.facebook.com/"
+                target="_blank"
+                title="Facebook">
+
+                f
+
+            </a>
+
+        </div>
+
+    </div>
+
+    <hr>
+
+    <p class="copyright">
+        © 2026 Kitsune Kissaten
+    </p>
+
+</footer>
+
+
+<!-- CARRITO -->
+
+<div id="fondoCarrito" class="fondo"></div>
+
+<aside id="carrito" class="carrito">
+
+    <div class="carrito-header">
+
+        <h2>
+            Tu pedido 🛒
+        </h2>
+
+        <button id="cerrarCarrito">
+            ×
+        </button>
+
+    </div>
+
+
+    <div id="itemsCarrito"></div>
+
+
+    <div class="total">
+
+        <span>
+            Total
+        </span>
+
+        <strong>
+            Bs <span id="totalCarrito">0.00</span>
+        </strong>
+
+    </div>
+
+
+    <div class="datos-pedido">
+
+        <h3>
+            Datos del pedido
+        </h3>
+
+        <input
+            id="cliente"
+            type="text"
+            placeholder="Tu nombre">
+
+        <input
+            id="telefonoPedido"
+            type="tel"
+            placeholder="Tu teléfono">
+
+        <select id="tipoPedido">
+
+            <option>
+                Consumir en el local
+            </option>
+
+            <option>
+                Para llevar
+            </option>
+
+            <option>
+                Delivery
+            </option>
+
+        </select>
+
+        <button
+            id="confirmarPedido"
+            class="btn">
+
+            Confirmar pedido
+
+        </button>
+
+    </div>
+
+</aside>
+
+
+<script src="app.js"></script>
+
+</body>
+</html>
